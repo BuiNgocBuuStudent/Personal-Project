@@ -16,7 +16,7 @@
 ## Tính năng nổi bật & Kỹ thuật lập trình
 
 - **Tối ưu hóa hiệu suất (Object Pooling):** Toàn bộ đạn (Bullets) và vật phẩm (Boosts) sinh ra trong game đều được tái sử dụng qua một hệ thống `ObjectPooler`.
-- **Kiến trúc Generic Singleton:** Triển khai một class `Singleton<T>` độc lập để quản lý dễ dàng, an toàn các hệ thống cốt lõi (Managers) như `GameManager`, `EnemyManager`, `BoostManager`, `SFXManager`,... tránh lặp lại code.
+- **Singleton Pattern:** quản lý dễ dàng, an toàn các hệ thống cốt lõi (Managers) như `GameManager`, `EnemyManager`, `BoostManager`, `SFXManager`,... tránh lặp lại code.
 - **Hệ thống Nâng cấp (Weighted Random Gacha):** Tính năng lõi của game. Khi nhặt vật phẩm, game sẽ chọn ngẫu nhiên ra 3 thẻ nâng cấp. Tỉ lệ rớt của mỗi thẻ không bằng nhau mà được tính toán dựa trên thuật toán Trọng số (Weighted Random), giúp cân bằng game.
 - **Độ khó tăng tiến (Dynamic Difficulty):** Sử dụng các `Coroutine` để liên tục buff thêm máu tối đa và tốc độ di chuyển cho kẻ thù sau mỗi khoảng thời gian người chơi sinh tồn, tạo ra nhịp độ game càng lúc càng dồn dập.
 
